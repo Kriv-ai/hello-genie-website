@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Features">
+  <Header />
+  <main class="pt-16">
+    <section class="gradient-bg section-padding">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-gray-900">Powerful <span class="gradient-text">Features</span></h1>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl">Everything you need to automate your business operations, all in one place.</p>
+        <div class="mt-12 space-y-8">
+          <div class="glass-card rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-gray-900">Smart Scheduling</h2>
+            <p class="mt-4 text-gray-600">AI that manages your entire calendar. Finds the best meeting times, sends reminders, handles rescheduling, and learns your preferences over time.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-gray-900">Customer Communication</h2>
+            <p class="mt-4 text-gray-600">Automated email responses, chat support, and follow-ups that maintain your voice and tone. Never miss a lead or forget a follow-up again.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-gray-900">Document Processing</h2>
+            <p class="mt-4 text-gray-600">Extract data from invoices, receipts, contracts, and forms automatically. Organize, categorize, and file everything without lifting a finger.</p>
+          </div>
+          <div class="glass-card rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-gray-900">Workflow Automation</h2>
+            <p class="mt-4 text-gray-600">Connect your tools — email, calendar, CRM, accounting — and create automated workflows. When X happens, do Y. No coding required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

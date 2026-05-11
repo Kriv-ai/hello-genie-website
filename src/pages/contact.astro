@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact">
+  <Header />
+  <main class="pt-16">
+    <section class="gradient-bg section-padding">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-gray-900">Get in <span class="gradient-text">Touch</span></h1>
+        <p class="mt-4 text-lg text-gray-600">Want early access? Have questions? We'd love to hear from you.</p>
+        <div class="mt-12 glass-card rounded-2xl p-8">
+          <h3 class="text-xl font-bold text-gray-900">Contact Us</h3>
+          <div class="mt-6 space-y-4">
+            <div>
+              <p class="text-sm text-gray-500">Email</p>
+              <p class="text-gray-900 font-medium">hello@hello-genie.com</p>
+            </div>
+          </div>
+          <a href="mailto:hello@hello-genie.com" class="btn-primary mt-8">Email Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

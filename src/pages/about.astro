@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About">
+  <Header />
+  <main class="pt-16">
+    <section class="gradient-bg section-padding">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-gray-900">About <span class="gradient-text">Hello Genie</span></h1>
+        <p class="mt-6 text-lg text-gray-600">We believe every small business deserves the same AI-powered efficiency that enterprise companies take for granted. Hello Genie makes that possible — no technical expertise required.</p>
+        <div class="mt-12 glass-card rounded-2xl p-8">
+          <h2 class="text-2xl font-bold text-gray-900">Our Mission</h2>
+          <p class="mt-4 text-gray-600">Democratize AI for small businesses. We're building tools that handle the busy work so entrepreneurs can focus on what they do best — serving their customers and growing their vision.</p>
+        </div>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-card rounded-2xl p-6 text-center">
+            <div class="text-3xl font-extrabold gradient-text">Simple</div>
+            <p class="mt-2 text-sm text-gray-600">No code required</p>
+          </div>
+          <div class="glass-card rounded-2xl p-6 text-center">
+            <div class="text-3xl font-extrabold gradient-text">Smart</div>
+            <p class="mt-2 text-sm text-gray-600">Learns your patterns</p>
+          </div>
+          <div class="glass-card rounded-2xl p-6 text-center">
+            <div class="text-3xl font-extrabold gradient-text">Secure</div>
+            <p class="mt-2 text-sm text-gray-600">Your data stays yours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

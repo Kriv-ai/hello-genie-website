@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Pricing">
+  <Header />
+  <main class="pt-16">
+    <section class="gradient-bg section-padding">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-extrabold text-gray-900"><span class="gradient-text">Pricing</span></h1>
+        <p class="mt-4 text-lg text-gray-600">We're currently in private beta. Join the waitlist to be first in line when we launch.</p>
+        <div class="mt-12 glass-card rounded-2xl p-12">
+          <h2 class="text-2xl font-bold text-gray-900">Coming Soon</h2>
+          <p class="mt-4 text-gray-600">We're finalizing our pricing to make sure Hello Genie is accessible to every small business. Early waitlist members will get founding member pricing — locked in for life.</p>
+          <a href="/contact" class="btn-primary mt-8">Join the Waitlist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
