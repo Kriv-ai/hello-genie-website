@@ -4,33 +4,201 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Features">
+<Layout title="Features" description="Smart scheduling, customer communication, document processing, and workflow automation — everything your small business needs in one AI assistant.">
   <Header />
   <main class="pt-16">
-    <section class="gradient-bg section-padding">
-      <div class="max-w-7xl mx-auto">
-        <h1 class="text-4xl font-extrabold text-gray-900">Powerful <span class="gradient-text">Features</span></h1>
-        <p class="mt-4 text-lg text-gray-600 max-w-3xl">Everything you need to automate your business operations, all in one place.</p>
-        <div class="mt-12 space-y-8">
-          <div class="glass-card rounded-2xl p-8">
-            <h2 class="text-2xl font-bold text-gray-900">Smart Scheduling</h2>
-            <p class="mt-4 text-gray-600">AI that manages your entire calendar. Finds the best meeting times, sends reminders, handles rescheduling, and learns your preferences over time.</p>
+
+    <!-- ════ HERO ════ -->
+    <section class="hero-bg section-padding wave-divider relative" style="padding-top: 7rem; padding-bottom: 6rem;">
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="badge-pill bg-purple-100 text-purple-700 mx-auto w-fit mb-6 animate-fade-in">Features</div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight animate-fade-in animate-delay-1">
+          Everything You Need,<br /><span class="gradient-text">One AI Assistant</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-2">
+          Four powerful capabilities, zero complexity. Hello Genie integrates with your existing tools and starts working in minutes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ════ FEATURE 1: SCHEDULING ════ -->
+    <section class="section-light section-padding">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="badge-pill bg-purple-100 text-purple-700 w-fit mb-4">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              Scheduling
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Smart Scheduling<br />That Actually Works</h2>
+            <p class="mt-4 text-gray-600 leading-relaxed">
+              No more back-and-forth emails. Genie finds the perfect meeting time, sends invites, handles rescheduling, and learns your preferences over time.
+            </p>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Automatic time zone detection and conversion</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Buffer time between meetings (you set the rules)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Smart rescheduling when conflicts arise</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Works with Google Calendar, Outlook, and Apple Calendar</span>
+              </li>
+            </ul>
           </div>
-          <div class="glass-card rounded-2xl p-8">
-            <h2 class="text-2xl font-bold text-gray-900">Customer Communication</h2>
-            <p class="mt-4 text-gray-600">Automated email responses, chat support, and follow-ups that maintain your voice and tone. Never miss a lead or forget a follow-up again.</p>
-          </div>
-          <div class="glass-card rounded-2xl p-8">
-            <h2 class="text-2xl font-bold text-gray-900">Document Processing</h2>
-            <p class="mt-4 text-gray-600">Extract data from invoices, receipts, contracts, and forms automatically. Organize, categorize, and file everything without lifting a finger.</p>
-          </div>
-          <div class="glass-card rounded-2xl p-8">
-            <h2 class="text-2xl font-bold text-gray-900">Workflow Automation</h2>
-            <p class="mt-4 text-gray-600">Connect your tools — email, calendar, CRM, accounting — and create automated workflows. When X happens, do Y. No coding required.</p>
+          <div class="feature-card p-8 text-center">
+            <div class="text-6xl mb-4">📅</div>
+            <div class="text-5xl font-black gradient-text">10hrs</div>
+            <p class="text-gray-500 mt-2">saved per week on scheduling</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ════ FEATURE 2: COMMUNICATION ════ -->
+    <section class="section-warm section-padding">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="feature-card p-8 text-center order-2 lg:order-1">
+            <div class="text-6xl mb-4">✉️</div>
+            <div class="text-5xl font-black gradient-text">Zero</div>
+            <p class="text-gray-500 mt-2">missed follow-ups</p>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="badge-pill bg-orange-100 text-orange-700 w-fit mb-4">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+              Communication
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Customer Comms<br />That Sound Like You</h2>
+            <p class="mt-4 text-gray-600 leading-relaxed">
+              Genie learns your communication style and handles email responses, follow-ups, and customer inquiries in your voice. Professional, personal, and always on time.
+            </p>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">AI-drafted responses that match your tone</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Automatic follow-up sequences for leads</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Smart categorization and priority flagging</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Works with Gmail, Outlook, and business chat tools</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ FEATURE 3: DOCUMENTS ════ -->
+    <section class="section-light section-padding">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="badge-pill bg-pink-100 text-pink-700 w-fit mb-4">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+              Documents
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Document Processing<br />on Autopilot</h2>
+            <p class="mt-4 text-gray-600 leading-relaxed">
+              Drop in invoices, receipts, contracts, or forms. Genie extracts the data, files it in the right place, and flags anything that needs your attention.
+            </p>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Instant data extraction from any document type</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Auto-categorize and file to the right folder</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Receipt scanning for expense tracking</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Works with PDF, images, Word docs, and spreadsheets</span>
+              </li>
+            </ul>
+          </div>
+          <div class="feature-card p-8 text-center">
+            <div class="text-6xl mb-4">📄</div>
+            <div class="text-5xl font-black gradient-text">99%</div>
+            <p class="text-gray-500 mt-2">accuracy on data extraction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ FEATURE 4: WORKFLOWS ════ -->
+    <section class="section-warm section-padding">
+      <div class="max-w-6xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="feature-card p-8 text-center order-2 lg:order-1">
+            <div class="text-6xl mb-4">⚡</div>
+            <div class="text-5xl font-black gradient-text">100+</div>
+            <p class="text-gray-500 mt-2">pre-built workflow templates</p>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="badge-pill bg-indigo-100 text-indigo-700 w-fit mb-4">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+              Workflows
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Workflow Automation<br />Without Code</h2>
+            <p class="mt-4 text-gray-600 leading-relaxed">
+              Connect your business tools and create automated workflows in plain English. Tell Genie what you want to happen, and it builds the automation for you.
+            </p>
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Natural language workflow builder — just describe it</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Connects to 50+ popular business tools</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Multi-step automations with conditional logic</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="check-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                <span class="text-gray-700 text-sm">Error handling and smart retries built in</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="section-purple section-padding">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+          See It In Action
+        </h2>
+        <p class="mt-6 text-purple-200 text-lg max-w-xl mx-auto">Join the waitlist and be among the first to experience AI-powered business automation.</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="btn-white text-base">Join the Waitlist</a>
+          <a href="/pricing" class="px-7 py-3.5 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors inline-block">View Pricing</a>
+        </div>
+      </div>
+    </section>
+
   </main>
   <Footer />
 </Layout>

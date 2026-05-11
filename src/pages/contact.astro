@@ -4,25 +4,139 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Contact">
+<Layout title="Contact" description="Get in touch with Hello Genie — join the waitlist for early access to AI-powered business automation.">
   <Header />
   <main class="pt-16">
-    <section class="gradient-bg section-padding">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-extrabold text-gray-900">Get in <span class="gradient-text">Touch</span></h1>
-        <p class="mt-4 text-lg text-gray-600">Want early access? Have questions? We'd love to hear from you.</p>
-        <div class="mt-12 glass-card rounded-2xl p-8">
-          <h3 class="text-xl font-bold text-gray-900">Contact Us</h3>
-          <div class="mt-6 space-y-4">
-            <div>
-              <p class="text-sm text-gray-500">Email</p>
-              <p class="text-gray-900 font-medium">hello@hello-genie.com</p>
+
+    <!-- ════ HERO ════ -->
+    <section class="hero-bg section-padding wave-divider relative" style="padding-top: 7rem; padding-bottom: 6rem;">
+      <div class="floating-icon" style="top: 20%; right: 10%;">💬</div>
+      <div class="floating-icon" style="top: 55%; left: 8%;">✨</div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="badge-pill bg-purple-100 text-purple-700 mx-auto w-fit mb-6 animate-fade-in">Contact</div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight animate-fade-in animate-delay-1">
+          Say <span class="gradient-text">Hello!</span>
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-2">
+          Want early access? Have a question? Just want to chat about how AI can help your business? We'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- ════ CONTACT SECTION ════ -->
+    <section class="section-light section-padding">
+      <div class="max-w-5xl mx-auto reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          <!-- Left: Contact Info -->
+          <div>
+            <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Let's Connect</h2>
+
+            <div class="space-y-6">
+              <div class="feature-card p-6 flex items-start gap-4">
+                <div class="icon-box bg-purple-100 shrink-0">
+                  <svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Email</p>
+                  <p class="text-gray-600 text-sm mt-1">hello@hello-genie.com</p>
+                </div>
+              </div>
+
+              <div class="feature-card p-6 flex items-start gap-4">
+                <div class="icon-box bg-orange-100 shrink-0">
+                  <svg class="w-5 h-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Location</p>
+                  <p class="text-gray-600 text-sm mt-1">New Jersey, United States</p>
+                </div>
+              </div>
+
+              <div class="feature-card p-6 flex items-start gap-4">
+                <div class="icon-box bg-pink-100 shrink-0">
+                  <svg class="w-5 h-5 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-900 text-sm">Response Time</p>
+                  <p class="text-gray-600 text-sm mt-1">We respond within 24 hours</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 feature-card p-6">
+              <h3 class="font-bold text-gray-900 mb-4">What Happens Next?</h3>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <div class="step-circle !w-8 !h-8 !text-xs">1</div>
+                  <span class="text-sm text-gray-600">You reach out via email or form</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="step-circle !w-8 !h-8 !text-xs">2</div>
+                  <span class="text-sm text-gray-600">We respond within 24 hours</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="step-circle !w-8 !h-8 !text-xs">3</div>
+                  <span class="text-sm text-gray-600">We add you to the waitlist with priority access</span>
+                </div>
+              </div>
             </div>
           </div>
-          <a href="mailto:hello@hello-genie.com" class="btn-primary mt-8">Email Us</a>
+
+          <!-- Right: Contact Form -->
+          <div>
+            <div class="feature-card p-8" style="border: 2px solid rgba(124, 58, 237, 0.15);">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">Join the Waitlist</h3>
+              <div class="space-y-5">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                  <div class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-400 bg-gray-50">
+                    What should we call you?
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <div class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-400 bg-gray-50">
+                    you@yourbusiness.com
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Business Name</label>
+                  <div class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-400 bg-gray-50">
+                    Your awesome business
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">What do you need help with?</label>
+                  <div class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-400 bg-gray-50 min-h-[100px]">
+                    Tell us about the busywork eating your time...
+                  </div>
+                </div>
+                <a href="mailto:hello@hello-genie.com" class="btn-primary w-full text-center block">
+                  Join the Waitlist
+                </a>
+                <p class="text-xs text-gray-400 text-center">No spam. Unsubscribe anytime. We respect your inbox.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="section-purple section-padding">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <div class="text-4xl mb-4">✨</div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-white">Prefer a Quick Email?</h2>
+        <p class="mt-4 text-purple-200 max-w-xl mx-auto">Drop us a line directly — we love hearing from business owners.</p>
+        <div class="mt-6">
+          <a href="mailto:hello@hello-genie.com" class="text-white font-bold text-xl hover:underline">hello@hello-genie.com</a>
+        </div>
+      </div>
+    </section>
+
   </main>
   <Footer />
 </Layout>

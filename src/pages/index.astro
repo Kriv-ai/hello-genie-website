@@ -7,78 +7,233 @@ import Footer from '../components/Footer.astro';
 <Layout title="Your AI Business Assistant">
   <Header />
   <main class="pt-16">
-    <!-- Hero -->
-    <section class="gradient-bg section-padding">
-      <div class="max-w-7xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight animate-fade-in">
+
+    <!-- ════ HERO ════ -->
+    <section class="hero-bg section-padding wave-divider-warm relative" style="padding-top: 7rem; padding-bottom: 9rem;">
+      <div class="floating-icon" style="top: 15%; left: 8%;">📅</div>
+      <div class="floating-icon" style="top: 25%; right: 12%;">✉️</div>
+      <div class="floating-icon" style="top: 60%; left: 15%;">📄</div>
+      <div class="floating-icon" style="top: 45%; right: 8%;">⚡</div>
+      <div class="floating-icon" style="top: 70%; right: 25%;">🎯</div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="badge-pill bg-purple-100 text-purple-700 mx-auto w-fit mb-8 animate-fade-in">
+          <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+          Now accepting early access signups
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-gray-900 leading-[1.1] tracking-tight animate-fade-in animate-delay-1">
           Your AI Business<br />
           <span class="gradient-text">Assistant</span>
         </h1>
-        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in animate-delay-1">
-          Stop drowning in admin work. Hello Genie automates scheduling, customer communication, document processing, and workflows — so you can focus on growing your business.
+
+        <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in animate-delay-2">
+          Stop drowning in admin work. Hello Genie automates scheduling, customer communication, and workflows — so you can focus on what you actually started your business to do.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animate-delay-2">
-          <a href="/contact" class="btn-primary">Join the Waitlist</a>
-          <a href="/features" class="px-6 py-3 border border-purple-200 rounded-full text-purple-700 font-semibold hover:bg-purple-50 transition-colors">
-            See Features
-          </a>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animate-delay-3">
+          <a href="/contact" class="btn-primary text-base">Join the Waitlist</a>
+          <a href="/features" class="btn-outline text-base">See Features</a>
         </div>
       </div>
     </section>
 
-    <!-- Problem -->
-    <section class="bg-white section-padding">
-      <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Small Businesses Spend <span class="gradient-text">40%</span> of Their Time on Admin</h2>
-        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Scheduling, emails, invoices, data entry — it never ends. Hello Genie handles the repetitive work so you don't have to.</p>
+    <!-- ════ SOCIAL PROOF ════ -->
+    <section class="section-warm py-10">
+      <div class="max-w-4xl mx-auto text-center reveal">
+        <p class="text-sm text-gray-500 uppercase tracking-wider font-medium mb-6">Trusted by growing businesses</p>
+        <div class="flex flex-wrap justify-center gap-8 items-center opacity-40">
+          <span class="text-gray-400 font-bold text-lg">Acme Co</span>
+          <span class="text-gray-400 font-bold text-lg">Bloom Studio</span>
+          <span class="text-gray-400 font-bold text-lg">NovaTech</span>
+          <span class="text-gray-400 font-bold text-lg">Spark Labs</span>
+          <span class="text-gray-400 font-bold text-lg">Zenith</span>
+        </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="bg-gray-50 section-padding">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center text-gray-900">Everything You Need</h2>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="glass-card rounded-2xl p-6">
-            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+    <!-- ════ PAIN POINT ════ -->
+    <section class="section-light section-padding wave-divider-warm reveal">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+            You Didn't Start a Business<br />to Do <span class="gradient-text">Paperwork</span>
+          </h2>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Small businesses spend up to 40% of their time on admin tasks. That's time you'll never get back.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="dotted-border rounded-2xl p-8 bg-red-50/50">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span class="text-2xl">😩</span> Without Hello Genie
+            </h3>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">&#x2717;</span> Manually scheduling every meeting</li>
+              <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">&#x2717;</span> Forgetting to follow up on leads</li>
+              <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">&#x2717;</span> Typing the same email responses daily</li>
+              <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">&#x2717;</span> Data entry from invoices and forms</li>
+              <li class="flex items-start gap-2"><span class="text-red-400 mt-0.5">&#x2717;</span> Working evenings on busywork</li>
+            </ul>
+          </div>
+          <div class="dotted-border rounded-2xl p-8 bg-green-50/50" style="border-color: rgba(34, 197, 94, 0.2);">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span class="text-2xl">✨</span> With Hello Genie
+            </h3>
+            <ul class="space-y-3 text-sm text-gray-600">
+              <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#x2713;</span> AI schedules meetings for you</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#x2713;</span> Automatic follow-ups that sound like you</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#x2713;</span> Smart email responses in seconds</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#x2713;</span> Auto-extract data from any document</li>
+              <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#x2713;</span> Evenings free for what matters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ FEATURES SHOWCASE ════ -->
+    <section class="section-warm section-padding">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <div class="badge-pill bg-purple-100 text-purple-700 mx-auto w-fit mb-4">Features</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Everything You Need,<br />Nothing You Don't</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+          <div class="feature-card p-8">
+            <div class="icon-box bg-purple-100 mb-5">
               <svg class="w-6 h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
             </div>
-            <h3 class="font-semibold text-gray-900">Smart Scheduling</h3>
-            <p class="mt-2 text-sm text-gray-600">AI that manages your calendar, finds optimal meeting times, and handles rescheduling automatically.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Scheduling</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">AI that manages your calendar, finds optimal meeting times across time zones, sends reminders, and handles rescheduling — all automatically.</p>
           </div>
-          <div class="glass-card rounded-2xl p-6">
-            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+
+          <div class="feature-card p-8">
+            <div class="icon-box bg-orange-100 mb-5">
               <svg class="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
             </div>
-            <h3 class="font-semibold text-gray-900">Customer Comms</h3>
-            <p class="mt-2 text-sm text-gray-600">Automated email responses, chat support, and follow-ups that sound like you wrote them.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Customer Communication</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Automated email responses, chat support, and follow-ups that maintain your voice and tone. Never miss a lead or forget a follow-up again.</p>
           </div>
-          <div class="glass-card rounded-2xl p-6">
-            <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+
+          <div class="feature-card p-8">
+            <div class="icon-box bg-pink-100 mb-5">
               <svg class="w-6 h-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
             </div>
-            <h3 class="font-semibold text-gray-900">Document Processing</h3>
-            <p class="mt-2 text-sm text-gray-600">Extract data from invoices, contracts, and forms. Auto-file and organize everything.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Document Processing</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Extract data from invoices, receipts, contracts, and forms automatically. Organize, categorize, and file everything without lifting a finger.</p>
           </div>
-          <div class="glass-card rounded-2xl p-6">
-            <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+
+          <div class="feature-card p-8">
+            <div class="icon-box bg-indigo-100 mb-5">
               <svg class="w-6 h-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
             </div>
-            <h3 class="font-semibold text-gray-900">Workflow Automation</h3>
-            <p class="mt-2 text-sm text-gray-600">Connect your tools and automate multi-step workflows. No coding required.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Workflow Automation</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Connect your tools — email, calendar, CRM, accounting — and create automated workflows. When X happens, do Y. No coding required.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="bg-white section-padding">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-900">Be the First to Try Hello Genie</h2>
-        <p class="mt-4 text-gray-600">We're building the AI assistant every small business deserves. Join the waitlist for early access.</p>
-        <a href="/contact" class="btn-primary mt-8">Join the Waitlist</a>
+    <!-- ════ HOW IT WORKS ════ -->
+    <section class="section-light section-padding wave-divider-warm">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <div class="badge-pill bg-orange-100 text-orange-700 mx-auto w-fit mb-4">How It Works</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Three Steps to Freedom</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-5">1</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Connect Your Tools</h3>
+            <p class="text-sm text-gray-600">Link your email, calendar, and business tools. Takes under 5 minutes with our guided setup.</p>
+          </div>
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-5">2</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Genie Learns</h3>
+            <p class="text-sm text-gray-600">Our AI studies your patterns, preferences, and communication style. It adapts to how you work.</p>
+          </div>
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-5">3</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Work Gets Done</h3>
+            <p class="text-sm text-gray-600">Sit back while Genie handles scheduling, emails, documents, and workflows. You stay in control.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ════ PRICING PREVIEW ════ -->
+    <section class="section-warm section-padding">
+      <div class="max-w-5xl mx-auto reveal">
+        <div class="text-center mb-12">
+          <div class="badge-pill bg-pink-100 text-pink-700 mx-auto w-fit mb-4">Pricing Preview</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Simple, Honest Pricing</h2>
+          <p class="mt-4 text-gray-600">Launching soon. Early members lock in founding pricing for life.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="pricing-card p-8 text-center">
+            <h3 class="text-lg font-bold text-gray-900">Starter</h3>
+            <div class="mt-4 text-4xl font-black text-gray-300">$--</div>
+            <p class="text-sm text-gray-500 mt-1">/month</p>
+            <div class="mt-6 space-y-3 text-sm text-gray-500">
+              <p>1 user</p>
+              <p>Basic scheduling</p>
+              <p>Email automation</p>
+            </div>
+            <div class="mt-8 px-4 py-2 rounded-full bg-gray-100 text-gray-400 text-sm font-medium">Coming Soon</div>
+          </div>
+
+          <div class="pricing-card featured p-8 text-center">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+              <span class="badge-pill bg-purple-600 text-white text-xs">Most Popular</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">Growth</h3>
+            <div class="mt-4 text-4xl font-black gradient-text">$--</div>
+            <p class="text-sm text-gray-500 mt-1">/month</p>
+            <div class="mt-6 space-y-3 text-sm text-gray-600">
+              <p>5 users</p>
+              <p>Full automation suite</p>
+              <p>Document processing</p>
+              <p>Priority support</p>
+            </div>
+            <div class="mt-8 px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">Coming Soon</div>
+          </div>
+
+          <div class="pricing-card p-8 text-center">
+            <h3 class="text-lg font-bold text-gray-900">Pro</h3>
+            <div class="mt-4 text-4xl font-black text-gray-300">$--</div>
+            <p class="text-sm text-gray-500 mt-1">/month</p>
+            <div class="mt-6 space-y-3 text-sm text-gray-500">
+              <p>Unlimited users</p>
+              <p>Custom workflows</p>
+              <p>API access</p>
+              <p>Dedicated support</p>
+            </div>
+            <div class="mt-8 px-4 py-2 rounded-full bg-gray-100 text-gray-400 text-sm font-medium">Coming Soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CTA ════ -->
+    <section class="section-purple section-padding relative overflow-hidden">
+      <div class="floating-icon" style="top: 20%; left: 5%; opacity: 0.1; color: white;">✨</div>
+      <div class="floating-icon" style="top: 60%; right: 8%; opacity: 0.1; color: white;">🚀</div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+          Ready to Get Your<br />Time Back?
+        </h2>
+        <p class="mt-6 text-purple-200 text-lg max-w-xl mx-auto">Join the waitlist and be the first to experience AI-powered business automation. Early members get founding pricing — locked in forever.</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="btn-white text-base">Join the Waitlist</a>
+          <a href="/features" class="px-7 py-3.5 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors inline-block">Learn More</a>
+        </div>
+      </div>
+    </section>
+
   </main>
   <Footer />
 </Layout>
