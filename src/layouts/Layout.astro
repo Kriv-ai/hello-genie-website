@@ -14,6 +14,13 @@ const { title, description = 'Your AI business assistant — smart scheduling, c
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WZH82M7R');</script>
+    <!-- End Google Tag Manager -->
     <meta name="description" content={description} />
     <meta property="og:title" content={`${title} | Hello Genie`} />
     <meta property="og:description" content={description} />
@@ -22,8 +29,14 @@ const { title, description = 'Your AI business assistant — smart scheduling, c
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <title>{title} | Hello Genie</title>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://www.clarity.ms" crossorigin />
   </head>
   <body class="font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZH82M7R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
     <script>
       const observer = new IntersectionObserver((entries) => {
@@ -32,6 +45,29 @@ const { title, description = 'Your AI business assistant — smart scheduling, c
         });
       }, { threshold: 0.1 });
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script is:inline>
+      (function(){
+        function loadAnalytics(){
+          var s=document.createElement('script');
+          s.async=true;
+          s.src='https://www.googletagmanager.com/gtag/js?id=REPLACE_GA4_HELLO_GENIE';
+          document.head.appendChild(s);
+          window.dataLayer=window.dataLayer||[];
+          function g(){dataLayer.push(arguments)}
+          window.gtag=g;
+          g('js',new Date());
+          g('config','REPLACE_GA4_HELLO_GENIE',{send_page_view:true});
+          g('config','AW-17807162550');
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window,document,'clarity','script','REPLACE_CLARITY_HELLO_GENIE');
+        }
+        if('requestIdleCallback' in window){requestIdleCallback(loadAnalytics)}
+        else{setTimeout(loadAnalytics,3000)}
+      })();
     </script>
   </body>
 </html>
